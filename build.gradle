@@ -44,9 +44,8 @@ import org.ajoberstar.grgit.*
 project.ext.androidAbi = System.getenv()['ANDROID_ABI']
 if (project.ext.androidAbi == null)
 {
-    project.ext.androidAbi = 'armeavi-v7a'
+    project.ext.androidAbi = 'armeabi-v7a'
 }
-print project.ext.androidAbi
 project.ext.vlcSource = file('vlc-android-' + project.ext.androidAbi)
 
 task cloneVlcAndroid << {
